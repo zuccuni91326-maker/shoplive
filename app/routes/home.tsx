@@ -12,8 +12,8 @@ const products: Product[] = [
 
 export function meta({}: Route.MetaArgs) {
 	return [
-		{ title: "Cove — the good kind of everyday" },
-		{ name: "description", content: "A considered collection for home, away, and in between." },
+		{ title: "ShopLive — the good kind of everyday" },
+		{ name: "description", content: "ShopLive is a considered collection for home, away, and in between." },
 	];
 }
 
@@ -38,7 +38,7 @@ export default function Home() {
 			<div className="top-note">Complimentary shipping on orders over $100 <span>•</span> Easy 30-day returns</div>
 			<header className="site-header">
 				<button className="menu-button" aria-label="Open menu"><span></span><span></span></button>
-				<a className="wordmark" href="#top">cove.</a>
+				<a className="wordmark" href="#top">ShopLive</a>
 				<nav aria-label="Primary navigation"><a href="#new">New arrivals</a><a href="#shop">Shop all</a><a href="#journal">Journal</a></nav>
 				<div className="header-actions"><button aria-label="Search"><span className="search-icon"></span></button><button className="bag-button" aria-label={`Shopping bag with ${bag} items`}><BagIcon />{bag > 0 && <b>{bag}</b>}</button></div>
 			</header>
@@ -63,7 +63,7 @@ export default function Home() {
 
 			<section className="story-banner" id="journal"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1800&q=85" alt="Peaceful architectural exterior by water" /><div><p className="eyebrow">From the journal</p><h2>A home for the<br /><em>in-between.</em></h2><p>Notes on creating spaces that invite you to stay a little longer.</p><a href="#journal" className="text-link">Read the story <ArrowIcon /></a></div></section>
 
-			<footer><a className="wordmark" href="#top">cove.</a><p>Made for the beautifully ordinary.</p><div><a href="#shop">Instagram</a><a href="#shop">Contact</a><a href="#shop">Shipping & returns</a></div></footer>
+			<footer><a className="wordmark" href="#top">ShopLive</a><p>Made for the beautifully ordinary.</p><div><a href="#shop">Instagram</a><a href="#shop">Contact</a><a href="#shop">Shipping & returns</a></div></footer>
 		</main>
 	);
 }
